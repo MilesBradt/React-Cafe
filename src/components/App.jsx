@@ -11,12 +11,10 @@ function App() {
             <style jsx global>{styles}</style>
             
             <div class='container' id='components-container'>
-                <div class='row'>
-                    <Switch>
-                        <Route exact path='/' component={Home} />
-                        <Route path='/employee' component={Employee} />
-                    </Switch>
-                </div>
+                <Switch>
+                    <Route exact path='/' component={Home} />
+                    <Route path='/employee' component={Employee} />
+                </Switch>
             </div>
         </div>
     );
