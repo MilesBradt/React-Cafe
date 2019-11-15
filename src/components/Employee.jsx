@@ -10,7 +10,8 @@ function Employee() {
         <div id="employeeComponent">
             <p>Employee works</p>
             <div class="container">
-                <Inventory/>
+                <Inventory
+                employee={true}/>
             </div>
             <Link to="/"> Return Home </Link>
         </div>

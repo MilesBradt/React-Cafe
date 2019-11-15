@@ -9,9 +9,13 @@ function Home() {
     return (
         <div id="homeComponent">
             <p>Home works</p>
-            <Link to="/employee"> Employee Link </Link>
+            <Link to={{
+                pathname: '/employee',
+                employee: true
+            }}> Employee Link </Link>
             <div class="container">
-                <Inventory/>
+                <Inventory
+                employee={false}/>
             </div>
         </div>
     );
