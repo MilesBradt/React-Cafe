@@ -3,14 +3,11 @@ import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.css';
 import styles from "../css/global.css";
 
-function Home() {
+function Employee() {
     return (
-        <div>
-        <p>Home works</p>
-        <Link to="/employee"> Employee Link </Link>
-        </div>
+        <p>Employee works</p>
     );
 }
 
 
-export default Home;
+export default Employee;
