@@ -11,7 +11,9 @@ function Inventory() {
         <div id="inventoryComponent">
             <p>Inventory works</p>
             {stock.map((item, index) =>
-                <li>{item.name}</li>
+                <li key={index}>
+                    {item.name}, {index}
+                </li>
             )}
         </div>
     );

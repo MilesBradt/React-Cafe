@@ -4,7 +4,7 @@ var stock = [
         brand: "brand 1",
         price: 5.00,
         alcoholContent: 0.10,
-        amount: 124
+        amount: 124,
     },
     {
         name: "drink 4",
