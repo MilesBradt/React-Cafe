@@ -5,3 +5,15 @@
     margin: 3em;
     padding: 1.5em;
 }
+
+.editButton {
+    width: 50px;
+}
+
+.sellButton {
+    width: 50px;
+}
+
+.itemsList {
+    margin-bottom: 1.5em;
+}
