@@ -1,1 +1,1 @@
-![Routing Structure](src/assets/routing.jpg?raw=true "Title")
+![Routing Structure](src/assets/images/routing.jpg?raw=true "Title")
