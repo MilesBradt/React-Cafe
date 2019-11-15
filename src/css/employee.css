@@ -1,7 +1,7 @@
-#inventoryComponent {
+#employeeComponent {
     border-style: solid;
     border-width: 3px;
-    border-color: rgb(97, 97, 141);
+    border-color: rgb(221, 74, 38);
     margin: 3em;
     padding: 1.5em;
 }

@@ -3,13 +3,16 @@ import { Link } from 'react-router-dom';
 import Inventory from './Inventory'
 import 'bootstrap/dist/css/bootstrap.css';
 import styles from "../css/global.css";
+import homeStyles from "../css/home.css";
 
 function Home() {
     return (
-        <div>
+        <div id="homeComponent">
             <p>Home works</p>
             <Link to="/employee"> Employee Link </Link>
-            <Inventory/>
+            <div class="container">
+                <Inventory/>
+            </div>
         </div>
     );
 }
