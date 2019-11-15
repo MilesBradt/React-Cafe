@@ -1,17 +1,13 @@
 import React from "react";
 import { Link } from 'react-router-dom';
-import Inventory from './Inventory'
 import 'bootstrap/dist/css/bootstrap.css';
 import styles from "../css/global.css";
 
-function Employee() {
+function Inventory() {
     return (
-        <div>
-            <p>Employee works</p>
-            <Inventory/>
-        </div>
+        <p>Inventory works</p>
     );
 }
 
 
-export default Employee;
+export default Inventory;
