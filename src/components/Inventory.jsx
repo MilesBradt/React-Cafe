@@ -9,22 +9,22 @@ function Inventory(props) {
     console.log("inventory props: " + props.employee)
     if (props.employee) {
         return (
-        <div id="inventoryComponent">
-            <p>Inventory works</p>
-            {stock.map((item, index) =>
-                <li key={index}>
-                    {item.name}, {index}, <p> edit placeholder</p>
-                </li>
-            )}
-        </div>
-    )
+            <div id="inventoryComponent">
+                <p>Inventory works</p>
+                {stock.map((item, index) =>
+                    <li key={index}>
+                        {item.brand}: {item.name} ({item.alcoholContent}%) - ${item.price} [EDIT PLACEHOLDER]
+                    </li>
+                )}
+            </div>
+        )
     } else {
         return (
             <div id="inventoryComponent">
                 <p>Inventory works</p>
                 {stock.map((item, index) =>
                     <li key={index}>
-                        {item.name}, {index}
+                        {item.brand}: {item.name} ({item.alcoholContent}%) - ${item.price}
                     </li>
                 )}
             </div>
