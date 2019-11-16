@@ -36,11 +36,11 @@ class Inventory extends React.Component  {
     constructor(props) {
         super(props);
         this.state = {
-            name: stock.name,
-            brand: stock.brand,
-            price: stock.price,
-            alcoholContent: stock.alcoholContent,
-            amount: SVGTextContentElement.amount
+            name: null,
+            brand: null,
+            price: null,
+            alcoholContent: null,
+            amount: null
         };
     }
 
@@ -52,7 +52,10 @@ class Inventory extends React.Component  {
                     <p>Inventory works</p>
                     {stock.map((item, index) =>
                         <li class="itemsList" key={index}>
-                            {item.brand}: {item.name} ({item.alcoholContent}%) - ${item.price} [{item.amount} pints] <button class="sellButton">Sell</button> / <button id="classButton">Edit</button>
+                            {item.brand}: {item.name} ({item.alcoholContent}%) - ${item.price} [{item.amount} pints] <button onClick={() => {
+                                stock[index].amount = stock[index].amount - 1
+                                console.log(stock[index].amount)}} 
+                                class="sellButton">Sell</button> / <button id="classButton">Edit</button>
                         </li>
                     )}
                 </div>
