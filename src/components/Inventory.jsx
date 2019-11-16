@@ -25,12 +25,13 @@ class Inventory extends React.Component  {
                     <p>Inventory works</p>
                     {stock.map((item, index) =>
                         <li class="itemsList" key={index}>
-                            {item.brand}: {item.name} ({item.alcoholContent}%) - ${item.price} [{item.amount} pints] <button onClick={() => {
+                            {item.brand}: {item.name} ({item.alcoholContent}%) - ${item.price} [{item.amount} pints] 
+                            <button class="sellButton" onClick={() => {
                                 stock[index].amount = stock[index].amount - 1
                                 console.log(stock[index].amount)
                                 this.setState({ amount: stock[index].amount })
                             }} 
-                            class="sellButton">Sell</button> / <button id="classButton">Edit</button>
+                            >Sell</button> / <button class="editButton">Edit</button>
                         </li>
                     )}
                 </div>
