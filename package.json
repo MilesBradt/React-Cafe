@@ -1,14 +1,25 @@
 {
-  "name": "reacttaproom",
+  "name": "React Tap Room",
   "version": "1.0.0",
-  "description": "",
+  "description": "minimal template for reactJs apps",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server"
+    "test": "test",
+    "start": "node_modules/.bin/webpack-dev-server",
+    "lint": "node_modules/.bin/eslint src/** src/**/**; exit 0",
+    "fix": "eslint src/** src/**/** --fix; exit 0",
+    "build": "node_modules/.bin/webpack --env=prod"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MilesBradt/Portfolio-React.git"
+  },
+  "author": "Miles Bradt",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MilesBradt/Portfolio-React/issues"
+  },
+  "homepage": "https://github.com/MilesBradt/Portfolio-React#readme",
   "dependencies": {
     "bootstrap": "^4.3.1",
     "firebase": "^5.8.3",
