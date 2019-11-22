@@ -16,7 +16,7 @@ function Inventory(props) {
                     <li class="itemsList" key={index}>
                         {item.brand}: {item.name} ({item.alcoholContent}%) - ${item.price} [{item.amount} pints]
                             <button class="sellButton" onClick={() =>
-                            props.itemUpdate(index)
+                            props.itemSubtract(index)
                             }
                         >Sell</button>
                     </li>
@@ -41,7 +41,7 @@ function Inventory(props) {
 Inventory.propTypes = {
     stockList: propTypes.array,
     employee: propTypes.bool,
-    itemUpdate: propTypes.func
+    itemSubtract: propTypes.func
 }
 
 export default Inventory;

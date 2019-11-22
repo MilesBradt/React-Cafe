@@ -15,7 +15,7 @@ function Employee(props) {
                 <Inventory
                 employee={props.employee}
                 stockList={props.stockList}
-                itemUpdate={props.itemUpdate}
+                itemSubtract={props.itemSubtract}
                 />
             </div>
             <Link to="/"> Return Home </Link>
@@ -26,7 +26,7 @@ function Employee(props) {
 Employee.propTypes = {
     stockList: propTypes.array,
     employee: propTypes.bool,
-    itemUpdate: propTypes.func
+    itemSubtract: propTypes.func
 }
 
 export default Employee;

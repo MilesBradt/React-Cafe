@@ -44,7 +44,7 @@ class App extends React.Component {
                         <Route path='/employee' render={(props) => <Employee 
                         stockList={this.state.masterStockList} 
                         employee={true}
-                        itemUpdate={this.subtractStockAmount}/>}
+                        itemSubtract={this.subtractStockAmount}/>}
                         />}
                         />
                     </Switch>
