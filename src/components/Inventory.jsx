@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.css';
 import styles from "../css/global.css";
@@ -6,6 +6,7 @@ import inventoryStyles from '../css/inventory.css';
 import propTypes from 'prop-types';
 
 function Inventory(props) {
+
     if (props.employee) {
         return (
             <div id="inventoryComponent">
@@ -13,7 +14,11 @@ function Inventory(props) {
                 {console.log("Employee is true")}
                 {props.stockList.map((item, index) =>
                     <li class="itemsList" key={index}>
-                        {item.brand}: {item.name} ({item.alcoholContent}%) - ${item.price}
+                        {item.brand}: {item.name} ({item.alcoholContent}%) - ${item.price} [{item.amount} pints]
+                            <button class="sellButton" onClick={() =>
+                            props.itemUpdate(index)
+                            }
+                        >Sell</button>
                     </li>
                 )}
             </div>
@@ -35,7 +40,8 @@ function Inventory(props) {
 
 Inventory.propTypes = {
     stockList: propTypes.array,
-    employee: propTypes.bool
+    employee: propTypes.bool,
+    itemUpdate: propTypes.func
 }
 
 export default Inventory;

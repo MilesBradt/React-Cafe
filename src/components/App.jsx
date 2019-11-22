@@ -13,18 +13,23 @@ class App extends React.Component {
             masterStockList: [],
             employee: false
         };
+        this.subtractStockAmount = this.subtractStockAmount.bind(this)
     }
 
     componentWillMount() {
         this.importStockToStockList()
-        console.log(this.state.masterStockList)
     }
 
-
     importStockToStockList() {
-        stock.map((item, index) =>
+        stock.map((item) =>
             this.state.masterStockList.push(item)
         )
+    }
+
+    subtractStockAmount(index) {
+        var newStockList = this.state.masterStockList;
+        newStockList[index].amount--
+        this.setState({masterStockList: newStockList})
     }
 
     render() {
@@ -33,10 +38,14 @@ class App extends React.Component {
                 <style jsx global>{styles}</style>
                 <div class='container' id='components-container'>
                     <Switch>
-                        <Route exact path='/' render={(props) => <Home stockList={this.state.masterStockList} />} 
+                        <Route exact path='/' render={(props) => <Home 
+                        stockList={this.state.masterStockList} />} 
                         />
-                        <Route path='/employee' render={(props) => <Employee stockList={this.state.masterStockList} 
-                        employee={true}/>}  />}
+                        <Route path='/employee' render={(props) => <Employee 
+                        stockList={this.state.masterStockList} 
+                        employee={true}
+                        itemUpdate={this.subtractStockAmount}/>}
+                        />}
                         />
                     </Switch>
                 </div>

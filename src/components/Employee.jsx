@@ -14,7 +14,9 @@ function Employee(props) {
             <div class="container">
                 <Inventory
                 employee={props.employee}
-                stockList={props.stockList}/>
+                stockList={props.stockList}
+                itemUpdate={props.itemUpdate}
+                />
             </div>
             <Link to="/"> Return Home </Link>
         </div>
@@ -23,7 +25,8 @@ function Employee(props) {
 
 Employee.propTypes = {
     stockList: propTypes.array,
-    employee: propTypes.bool
+    employee: propTypes.bool,
+    itemUpdate: propTypes.func
 }
 
 export default Employee;
