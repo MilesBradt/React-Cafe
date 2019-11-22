@@ -5,13 +5,15 @@ import 'bootstrap/dist/css/bootstrap.css';
 import styles from "../css/global.css";
 import employeeStyles from "../css/employee.css";
 
-function Employee() {
+function Employee(props) {
     return (
         <div id="employeeComponent">
             <p>Employee works</p>
+            {console.log("employee stock list: " + props.stockList)}
             <div class="container">
                 <Inventory
-                employee={true}/>
+                employee={true}
+                stockList={props.stockList}/>
             </div>
             <Link to="/"> Return Home </Link>
         </div>

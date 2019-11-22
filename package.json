@@ -1,7 +1,7 @@
 {
   "name": "React-Tap-Room",
   "version": "1.0.0",
-  "description": "minimal template for reactJs apps",
+  "description": "N/A",
   "main": "index.js",
   "scripts": {
     "test": "test",
@@ -12,24 +12,22 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MilesBradt/Portfolio-React.git"
+    "url": ""
   },
   "author": "Miles Bradt",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/MilesBradt/Portfolio-React/issues"
+    "url": ""
   },
-  "homepage": "https://github.com/MilesBradt/Portfolio-React#readme",
+  "homepage": "",
   "dependencies": {
     "bootstrap": "^4.3.1",
     "firebase": "^5.8.3",
     "firebase-tools": "^6.3.1",
-    "prop-types": "^15.5.10",
+    "prop-types": "^15.7.2",
     "react": "^16.8.6",
-    "react-copy-to-clipboard": "^5.0.1",
     "react-dom": "^16.8.2",
     "react-materialize": "^1.1.2",
-    "react-particles-js": "^2.4.2",
     "react-router-dom": "^4.0.0",
     "style-loader": "^0.23.1",
     "styled-jsx": "^3.2.1"
