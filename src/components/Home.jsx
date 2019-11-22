@@ -4,21 +4,26 @@ import Inventory from './Inventory'
 import 'bootstrap/dist/css/bootstrap.css';
 import styles from "../css/global.css";
 import homeStyles from "../css/home.css";
+import propTypes from 'prop-types';
 
-function Home() {
+function Home(props) {
     return (
         <div id="homeComponent">
             <p>Home works</p>
             <Link to={{
-                pathname: '/employee',
-                employee: true
+                pathname: '/employee'
             }}> Employee Link </Link>
             <div class="container">
                 <Inventory
-                employee={false}/>
+                employee={false}
+                stockList={props.stockList}/>
             </div>
         </div>
     );
+}
+
+Home.propTypes = {
+    stockList: propTypes.array
 }
 
 

@@ -10,7 +10,8 @@ class App extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            masterStockList: []
+            masterStockList: [],
+            employee: false
         };
     }
 
@@ -32,9 +33,10 @@ class App extends React.Component {
                 <style jsx global>{styles}</style>
                 <div class='container' id='components-container'>
                     <Switch>
-                        <Route exact path='/' component={Home} />
-                        <Route path='/employee' render={(props) => <Employee stockList={this.state.masterStockList}
-                            currentRouterPath={props.location.pathname} />}
+                        <Route exact path='/' render={(props) => <Home stockList={this.state.masterStockList} />} 
+                        />
+                        <Route path='/employee' render={(props) => <Employee stockList={this.state.masterStockList} 
+                        employee={true}/>}  />}
                         />
                     </Switch>
                 </div>

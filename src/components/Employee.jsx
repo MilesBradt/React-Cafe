@@ -4,6 +4,7 @@ import Inventory from './Inventory'
 import 'bootstrap/dist/css/bootstrap.css';
 import styles from "../css/global.css";
 import employeeStyles from "../css/employee.css";
+import propTypes from 'prop-types';
 
 function Employee(props) {
     return (
@@ -12,7 +13,7 @@ function Employee(props) {
             {console.log("employee stock list: " + props.stockList)}
             <div class="container">
                 <Inventory
-                employee={true}
+                employee={props.employee}
                 stockList={props.stockList}/>
             </div>
             <Link to="/"> Return Home </Link>
@@ -20,5 +21,9 @@ function Employee(props) {
     );
 }
 
+Employee.propTypes = {
+    stockList: propTypes.array,
+    employee: propTypes.bool
+}
 
 export default Employee;

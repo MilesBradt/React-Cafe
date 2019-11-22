@@ -3,15 +3,14 @@ import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.css';
 import styles from "../css/global.css";
 import inventoryStyles from '../css/inventory.css';
-import stock from '../assets/javascript/inventory.js'
+import propTypes from 'prop-types';
 
 function Inventory(props) {
-    console.log("inventory props: " + props.employee)
     if (props.employee) {
         return (
             <div id="inventoryComponent">
                 <p>Inventory works</p>
-                {console.log("inventory stock list: " + props.stockList)}
+                {console.log("Employee is true")}
                 {props.stockList.map((item, index) =>
                     <li class="itemsList" key={index}>
                         {item.brand}: {item.name} ({item.alcoholContent}%) - ${item.price}
@@ -23,7 +22,8 @@ function Inventory(props) {
         return (
             <div id="inventoryComponent">
                 <p>Inventory works</p>
-                {stock.map((item, index) =>
+                {console.log("Employee is false")}
+                {props.stockList.map((item, index) =>
                     <li class="itemsList" key={index}>
                         {item.brand}: {item.name} ({item.alcoholContent}%) - ${item.price}
                     </li>
@@ -31,6 +31,11 @@ function Inventory(props) {
             </div>
         )
     }
+}
+
+Inventory.propTypes = {
+    stockList: propTypes.array,
+    employee: propTypes.bool
 }
 
 export default Inventory;
