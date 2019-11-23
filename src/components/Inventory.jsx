@@ -14,7 +14,7 @@ function Inventory(props) {
                 {console.log("Employee is true")}
                 {props.stockList.map((item, index) =>
                     <li class="itemsList" key={index}>
-                        {item.brand}: {item.name} ({item.alcoholContent}%) - ${item.price} [{item.amount} pints]
+                        {item.brand}: {item.name} - ${item.price} [{item.amount} cups]
                             &nbsp; <button class="sellButton" onClick={() =>
                             props.itemSubtract(index)
                             }
@@ -30,7 +30,7 @@ function Inventory(props) {
                 {console.log("Employee is false")}
                 {props.stockList.map((item, index) =>
                     <li class="itemsList" key={index}>
-                        {item.brand}: {item.name} ({item.alcoholContent}%) - ${item.price}
+                        {item.brand}: {item.name} - ${item.price}
                     </li>
                 )}
             </div>

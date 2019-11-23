@@ -1,0 +1,8 @@
+#navComponent {
+    height: 5em;
+    width: 1000px;
+    display: block;
+    margin: 0 auto;
+    background-color: #0f0603;
+    padding: 1.5em;
+}

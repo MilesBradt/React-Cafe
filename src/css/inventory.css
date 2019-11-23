@@ -1,7 +1,4 @@
 #inventoryComponent {
-    border-style: solid;
-    border-width: 3px;
-    border-color: rgb(97, 97, 141);
     margin: 3em;
     padding: 1.5em;
 }
@@ -12,6 +9,7 @@
 
 .sellButton {
     width: 50px;
+    color: black;
 }
 
 .itemsList {

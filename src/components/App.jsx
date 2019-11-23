@@ -3,6 +3,7 @@ import { Switch, Route } from 'react-router-dom';
 import Home from './Home'
 import Employee from './Employee'
 import Header from './Header'
+import Navbar from './Navbar'
 import 'bootstrap/dist/css/bootstrap.css';
 import styles from '../css/global.css';
 import stock from '../assets/javascript/inventory.js'
@@ -39,6 +40,7 @@ class App extends React.Component {
                 <style jsx global>{styles}</style>
                 <div class='container' id='components-container'>
                     <Header />
+                    <Navbar />
                     <Switch>
                         <Route exact path='/' render={(props) => <Home 
                         stockList={this.state.masterStockList} />} 

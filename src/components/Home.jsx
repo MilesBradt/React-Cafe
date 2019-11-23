@@ -9,9 +9,6 @@ import propTypes from 'prop-types';
 function Home(props) {
     return (
         <div id="homeComponent">
-            <Link to={{
-                pathname: '/employee'
-            }}> Employee Link </Link>
             <div class="container">
                 <Inventory
                 employee={false}

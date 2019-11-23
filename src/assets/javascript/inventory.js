@@ -2,30 +2,26 @@ var stock = [
     {
         name: "drink 1",
         brand: "brand 1",
-        price: 5.00,
-        alcoholContent: 10,
-        amount: 124,
+        price: 5,
+        amount: 100
     },
     {
         name: "drink 4",
         brand: "brand 1",
-        price: 2.00,
-        alcoholContent: 10,
-        amount: 124
+        price: 2,
+        amount: 100
     },
     {
         name: "drink 3",
         brand: "brand 2",
-        price: 4.00,
-        alcoholContent: 20,
-        amount: 124
+        price: 4,
+        amount: 100
     },
     {
         name: "drink 4",
         brand: "brand 2",
-        price: 1.00,
-        alcoholContent: 12,
-        amount: 124
+        price: 1,
+        amount: 100
     },
 ]
 
