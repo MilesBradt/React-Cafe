@@ -1,6 +1,6 @@
 # React Tap Room
 
-Mock tap room webpage built with React
+Mock ~~tap room~~ cafe webpage built with React
 
 ### Installing
 
@@ -18,10 +18,11 @@ Go to http://localhost:8080/ in your browser
 
 ## WIP Notes
 
-* Site is currently in a wireframe state, CSS updates and creative elements will be added later
-* Edit buttons do not function yet
-* Routing structure diagram needs to be properly updated
-* README is lacking
+* CSS needs to be finished, only header is done
+* Rebrand to a cafe isn't completed 
+* Inventory needs more items and real names
+* Naming through the program could benefit from a refactor
+* Need to include edit button with proper functionality
 
 ## Built With
 
