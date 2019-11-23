@@ -9,6 +9,7 @@ function Header() {
     return (
         <div id="headerComponent">
             <img src={headerImage} alt=""/>
+            <h1>Impresso Espresso Café</h1>
         </div>
     );
 }

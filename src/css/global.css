@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
+
 body,
 html {
-    
     background-image: url(../assets/images/wallpaper.jpg);
     background-attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    color: #eceae1;
 }

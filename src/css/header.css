@@ -1,4 +1,17 @@
 img {
+    position: relative;
     display: block;
     margin: 0 auto;
+}
+
+h1 {
+    font-family: 'Lobster', cursive;
+    text-shadow: 4px 4px #261008;
+    color: #eceae1;
+    font-size: 6em;
+    left: 0;
+    position:absolute;
+    text-align:center;
+    top: 30px;
+    width: 100%
 }
