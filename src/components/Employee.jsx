@@ -10,7 +10,6 @@ function Employee(props) {
     return (
         <div id="employeeComponent">
             <p>Employee works</p>
-            {console.log("employee stock list: " + props.stockList)}
             <div class="container">
                 <Inventory
                 employee={props.employee}

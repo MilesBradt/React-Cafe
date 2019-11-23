@@ -15,7 +15,7 @@ function Inventory(props) {
                 {props.stockList.map((item, index) =>
                     <li class="itemsList" key={index}>
                         {item.brand}: {item.name} ({item.alcoholContent}%) - ${item.price} [{item.amount} pints]
-                            <button class="sellButton" onClick={() =>
+                            &nbsp; <button class="sellButton" onClick={() =>
                             props.itemSubtract(index)
                             }
                         >Sell</button>

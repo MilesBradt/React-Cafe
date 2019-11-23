@@ -2,6 +2,7 @@ import React from "react";
 import { Switch, Route } from 'react-router-dom';
 import Home from './Home'
 import Employee from './Employee'
+import Header from './Header'
 import 'bootstrap/dist/css/bootstrap.css';
 import styles from '../css/global.css';
 import stock from '../assets/javascript/inventory.js'
@@ -37,6 +38,7 @@ class App extends React.Component {
             <div>
                 <style jsx global>{styles}</style>
                 <div class='container' id='components-container'>
+                    <Header />
                     <Switch>
                         <Route exact path='/' render={(props) => <Home 
                         stockList={this.state.masterStockList} />} 
