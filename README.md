@@ -1,6 +1,6 @@
-# React Tap Room
+# React Café
 
-Mock ~~tap room~~ cafe webpage built with React
+Mock Café webpage built with React
 
 ### Installing
 
