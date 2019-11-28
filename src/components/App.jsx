@@ -45,13 +45,13 @@ class App extends React.Component {
                         itemSubtract={this.subtractStockAmount} 
                     />
                     <Switch>
-                        <Route exact path='/' render={(props) => <Home 
-                        stockList={this.state.masterStockList} />} 
+                        <Route exact path='/' render={(props) => <Home
+                            stockList={this.state.masterStockList} />}
                         />
-                        <Route path='/employee' render={(props) => <Employee 
-                        stockList={this.state.masterStockList} 
-                        employee={true}
-                        itemSubtract={this.subtractStockAmount}/>}
+                        <Route path='/employee' render={(props) => <Employee
+                            stockList={this.state.masterStockList}
+                            employee={true}
+                            itemSubtract={this.subtractStockAmount} />}
                         />}
                         />
                     </Switch>

@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from 'react-router-dom';
 import Inventory from './Inventory'
 import 'bootstrap/dist/css/bootstrap.css';
 import styles from "../css/global.css";
@@ -9,11 +8,11 @@ import propTypes from 'prop-types';
 function Home(props) {
     return (
         <div id="homeComponent">
-            {/* <div class="container">
+            <div class="container">
                 <Inventory
                 employee={false}
                 stockList={props.stockList}/>
-            </div> */}
+            </div>
         </div>
     );
 }

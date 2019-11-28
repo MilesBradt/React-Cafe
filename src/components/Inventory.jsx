@@ -17,7 +17,7 @@ function Inventory(props) {
                         {item.brand}: {item.name} - ${item.price} [{item.amount} cups]
                             &nbsp; <button class="sellButton" onClick={() =>
                             props.itemSubtract(index)
-                            }
+                        }
                         >Sell</button>
                     </li>
                 )}
