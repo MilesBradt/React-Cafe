@@ -1,8 +1,18 @@
 #navComponent {
-    height: 5em;
+    height: 50em;
     width: 1000px;
     display: block;
     margin: 0 auto;
+    background-color: #592D1D;
+}
+
+.test {
+    height: 82px;
+    display: block;
+    margin: 0 auto;
     background-color: #0f0603;
-    padding: 1.5em;
+}
+
+.tab:hover {
+    background-color: pink;
 }

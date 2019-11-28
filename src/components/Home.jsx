@@ -9,11 +9,11 @@ import propTypes from 'prop-types';
 function Home(props) {
     return (
         <div id="homeComponent">
-            <div class="container">
+            {/* <div class="container">
                 <Inventory
                 employee={false}
                 stockList={props.stockList}/>
-            </div>
+            </div> */}
         </div>
     );
 }

@@ -21,11 +21,12 @@
   },
   "homepage": "",
   "dependencies": {
-    "bootstrap": "^4.3.1",
+    "bootstrap": "^4.4.0",
     "firebase": "^5.8.3",
     "firebase-tools": "^6.3.1",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
+    "react-bootstrap": "^1.0.0-beta.16",
     "react-dom": "^16.8.2",
     "react-materialize": "^1.1.2",
     "react-router-dom": "^4.0.0",

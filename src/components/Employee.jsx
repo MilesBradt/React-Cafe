@@ -9,15 +9,11 @@ import propTypes from 'prop-types';
 function Employee(props) {
     return (
         <div id="employeeComponent">
-            <p>Employee works</p>
-            <div class="container">
                 <Inventory
                 employee={props.employee}
                 stockList={props.stockList}
                 itemSubtract={props.itemSubtract}
                 />
-            </div>
-            <Link to="/"> Return Home </Link>
         </div>
     );
 }

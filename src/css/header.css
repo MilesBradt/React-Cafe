@@ -4,7 +4,7 @@ img {
     margin: 0 auto;
 }
 
-h1 {
+#headerName {
     font-family: 'Lobster', cursive;
     text-shadow: 4px 4px #261008;
     color: #eceae1;
@@ -15,3 +15,4 @@ h1 {
     top: 30px;
     width: 100%
 }
+

@@ -40,7 +40,10 @@ class App extends React.Component {
                 <style jsx global>{styles}</style>
                 <div class='container' id='components-container'>
                     <Header />
-                    <Navbar />
+                    <Navbar
+                        stockList={this.state.masterStockList}
+                        itemSubtract={this.subtractStockAmount} 
+                    />
                     <Switch>
                         <Route exact path='/' render={(props) => <Home 
                         stockList={this.state.masterStockList} />} 
