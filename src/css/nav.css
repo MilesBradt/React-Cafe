@@ -1,8 +1,26 @@
 #navComponent {
-    height: 5em;
+    height: 3em;
     width: 1000px;
     display: block;
     margin: 0 auto;
     background-color: #0f0603;
     padding: 1.5em;
+}
+
+#homeButton {
+    margin-top: -1.85em;
+    margin-right: 1em;
+}
+
+#employeeButton {
+    margin-top: -1.85em;
+}
+
+.linkTo {
+    color: rgb(199, 199, 199);
+}
+
+.linkTo:hover {
+    color: rgb(199, 199, 199);
+    text-decoration: none;
 }
