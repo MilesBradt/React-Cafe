@@ -1,3 +1,7 @@
 #employeeComponent {
-    
+    height: 100em;
+    width: 1000px;
+    display: block;
+    margin: 0 auto;
+    background-color: #261008;
 }

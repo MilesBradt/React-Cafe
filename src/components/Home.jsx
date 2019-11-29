@@ -8,11 +8,10 @@ import propTypes from 'prop-types';
 function Home(props) {
     return (
         <div id="homeComponent">
-            <div class="container">
-                <Inventory
-                employee={false}
-                stockList={props.stockList}/>
-            </div>
+            <h1>Placeholder stuff</h1>
+            <Inventory
+            employee={false}
+            stockList={props.stockList}/>
         </div>
     );
 }

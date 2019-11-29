@@ -1,10 +1,19 @@
 #inventoryComponent {
-    height: 100em;
-    width: 1000px;
+    font-family: 'Gochi Hand', cursive;
+    font-size: x-large;
+    height: 50em;
+    width: 900px;
     display: block;
     margin: 0 auto;
-    background-color: #261008;
+    background-color: #141414;
+    background-image: url("https://www.transparenttextures.com/patterns/black-felt.png");
+    border-style: double;
+    border-width: 3px;
+    border-image: url("https://www.transparenttextures.com/patterns/dust.png") 25 30 10 20 repeat;
+    font-family: 'Gochi Hand', cursive;
+    color:#D0D3D9;
     padding: 1.5em;
+    box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.801);
 }
 
 .editButton {

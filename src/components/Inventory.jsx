@@ -10,7 +10,6 @@ function Inventory(props) {
     if (props.employee) {
         return (
             <div id="inventoryComponent">
-                <p>Inventory works</p>
                 {console.log("Employee is true")}
                 {props.stockList.map((item, index) =>
                     <li class="itemsList" key={index}>
@@ -26,7 +25,6 @@ function Inventory(props) {
     } else {
         return (
             <div id="inventoryComponent">
-                <p>Inventory works</p>
                 {console.log("Employee is false")}
                 {props.stockList.map((item, index) =>
                     <li class="itemsList" key={index}>
