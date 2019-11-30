@@ -18,8 +18,9 @@ Go to http://localhost:8080/ in your browser
 
 ## WIP Notes
 
+* Inventory needs a way to add amount
 * Inventory needs more items
-* Naming through the program could benefit from a refactor
+* Naming throughout the program could benefit from a refactor
 * Need to include edit button with proper functionality
 
 ## Built With
