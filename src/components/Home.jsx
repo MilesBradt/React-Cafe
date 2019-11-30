@@ -11,7 +11,7 @@ function Home(props) {
             <h1>Placeholder stuff</h1>
             <Inventory
             employee={false}
-            stockList={props.stockList}/>
+            coffeeList={props.coffeeList}/>
         </div>
     );
 }

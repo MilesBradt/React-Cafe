@@ -13,6 +13,8 @@ class App extends React.Component {
         super(props);
         this.state = {
             masterStockList: [],
+            masterCoffeeList: [],
+            masterTeaList: [],
             employee: false
         };
         this.subtractStockAmount = this.subtractStockAmount.bind(this)
@@ -20,13 +22,34 @@ class App extends React.Component {
 
     componentWillMount() {
         this.importStockToStockList()
+        console.log(this.state.masterCoffeeList)
     }
 
     importStockToStockList() {
         stock.map((item) =>
             this.state.masterStockList.push(item)
         )
+        this.state.masterStockList.map((item, index) => {
+            if (item.type === "coffee") {
+                item.id = index
+                this.state.masterCoffeeList.push(item)
+            } else if (item.type === "tea") {
+                item.id = index
+                this.state.masterTeaList.push(item)
+            }
+        }
+        )
     }
+
+    // categorizeStockList() {
+    //     this.state.masterStockList.map((item, index) =>
+    //         {if (item.type === "coffee") {
+    //             this.state.masterCoffeeList.push(item)
+    //         } else if (item.type === "tea") {
+    //             this.state.masterTeaList.push(item)
+    //         }}
+    //     )
+    // }
 
     subtractStockAmount(index) {
         var newStockList = this.state.masterStockList;
@@ -34,24 +57,23 @@ class App extends React.Component {
         this.setState({masterStockList: newStockList})
     }
 
+
     render() {
         return (
             <div>
                 <style jsx global>{styles}</style>
                 <div class='container' id='components-container'>
                     <Header />
-                    <Navbar
-                        stockList={this.state.masterStockList}
-                        itemSubtract={this.subtractStockAmount} 
-                    />
+                    <Navbar />
                     <Switch>
                         <Route exact path='/' render={(props) => <Home
-                            stockList={this.state.masterStockList} />}
+                            coffeeList={this.state.masterCoffeeList} />}
                         />
                         <Route path='/employee' render={(props) => <Employee
-                            stockList={this.state.masterStockList}
+                            coffeeList={this.state.masterCoffeeList}
                             employee={true}
-                            itemSubtract={this.subtractStockAmount} />}
+                            itemSubtract={this.subtractStockAmount}
+                        />}
                         />}
                         />
                     </Switch>

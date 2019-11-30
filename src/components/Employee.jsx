@@ -9,7 +9,7 @@ function Employee(props) {
         <div id="employeeComponent">
                 <Inventory
                 employee={props.employee}
-                stockList={props.stockList}
+                coffeeList={props.coffeeList}
                 itemSubtract={props.itemSubtract}
                 />
         </div>

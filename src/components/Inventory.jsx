@@ -11,33 +11,40 @@ function Inventory(props) {
         return (
             <div id="inventoryComponent">
                 {console.log("Employee is true")}
-                {props.stockList.map((item, index) =>
-                    <li class="itemsList" key={index}>
-                        {item.brand}: {item.name} - ${item.price} [{item.amount} cups]
+                <div class="coffeeComponent">
+                    <h1>Coffee</h1>
+                    {props.coffeeList.map((item, index) =>
+                        <li class="itemsList" key={index}>
+                            {item.brand}: {item.name} - ${item.price} [{item.amount} cups]
                             &nbsp; <button class="sellButton" onClick={() =>
-                            props.itemSubtract(index)
-                        }
-                        >Sell</button>
-                    </li>
-                )}
+                                props.itemSubtract(item.id)
+                            }
+                            >Sell</button>
+                        </li>
+                    )}
+                </div>
             </div>
         )
     } else {
         return (
             <div id="inventoryComponent">
-                {console.log("Employee is false")}
-                {props.stockList.map((item, index) =>
-                    <li class="itemsList" key={index}>
-                        {item.brand}: {item.name} - ${item.price}
-                    </li>
-                )}
+                <div class="coffeeComponent">
+                    <h1>Coffee</h1>
+                    {console.log(props.coffeeList)}
+                    {console.log("Employee is false")}
+                    {props.coffeeList.map((item, index) =>
+                        <li class="itemsList" key={index}>
+                            {item.brand}: {item.name} - ${item.price}
+                        </li>
+                    )}
+                </div>
             </div>
         )
     }
 }
 
 Inventory.propTypes = {
-    stockList: propTypes.array,
+    coffeeList: propTypes.array,
     employee: propTypes.bool,
     itemSubtract: propTypes.func
 }
