@@ -8,7 +8,7 @@ import propTypes from 'prop-types';
 function Home(props) {
     return (
         <div id="homeComponent">
-            <h1>Placeholder stuff</h1>
+            <h1>Menu</h1>
             <Inventory
             employee={false}
             coffeeList={props.coffeeList}

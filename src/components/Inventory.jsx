@@ -17,7 +17,7 @@ function Inventory(props) {
                     <span class="coffeeMenuText">Coffee</span>
                     {props.coffeeList.map((item, index) =>
                         <li class="itemsList" key={index}>
-                            {item.type} - {item.priceSmall} / {item.priceLarge} [{item.amount} cups]
+                            {item.type} - {item.priceSmall} / {item.priceLarge} [Amount Left: {item.amount}]
                             &nbsp; <button class="sellButton" onClick={() =>
                                 props.itemSubtract(item.id)
                             }
@@ -29,7 +29,7 @@ function Inventory(props) {
                     <span class="teaMenuText">Tea</span>
                     {props.teaList.map((item, index) =>
                         <li class="itemsList" key={index}>
-                            {item.type} - {item.priceSmall} / {item.priceLarge} [{item.amount} cups]
+                            {item.type} - {item.priceSmall} / {item.priceLarge} [Amount Left: {item.amount}]
                             &nbsp; <button class="sellButton" onClick={() =>
                                 props.itemSubtract(item.id)
                             }

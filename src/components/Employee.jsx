@@ -7,12 +7,13 @@ import propTypes from 'prop-types';
 function Employee(props) {
     return (
         <div id="employeeComponent">
-                <Inventory
+            <h1>Employee Menu</h1>
+            <Inventory
                 employee={props.employee}
                 coffeeList={props.coffeeList}
                 teaList={props.teaList}
                 itemSubtract={props.itemSubtract}
-                />
+            />
         </div>
     );
 }

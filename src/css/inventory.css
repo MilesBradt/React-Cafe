@@ -39,6 +39,7 @@
 }
 
 .sellButton {
+    font-family: 'Gupter', serif;
     width: 50px;
     color: black;
 }
@@ -52,5 +53,5 @@
 }
 
 .itemsList {
-    
+    margin-bottom: 1em;
 }
