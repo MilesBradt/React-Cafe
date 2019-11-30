@@ -1,4 +1,4 @@
-#inventoryComponent {
+.inventoryComponent {
     font-family: 'Gochi Hand', cursive;
     font-size: x-large;
     height: 50em;
@@ -16,6 +16,24 @@
     box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.801);
 }
 
+
+.coffeeMenuText {
+    font-family: 'Lobster', cursive;
+    font-size: 2em;
+    padding: 1.5em;
+}
+
+.teaMenuText {
+    font-family: 'Lobster', cursive;
+    font-size: 2em;
+    padding: 1.5em;
+}
+
+#itemPrice {
+    float: right;
+    padding-right: 1em;
+}
+
 .editButton {
     width: 50px;
 }
@@ -26,5 +44,5 @@
 }
 
 .itemsList {
-    margin-bottom: 1.5em;
+    
 }

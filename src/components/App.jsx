@@ -41,16 +41,6 @@ class App extends React.Component {
         )
     }
 
-    // categorizeStockList() {
-    //     this.state.masterStockList.map((item, index) =>
-    //         {if (item.type === "coffee") {
-    //             this.state.masterCoffeeList.push(item)
-    //         } else if (item.type === "tea") {
-    //             this.state.masterTeaList.push(item)
-    //         }}
-    //     )
-    // }
-
     subtractStockAmount(index) {
         var newStockList = this.state.masterStockList;
         newStockList[index].amount--
@@ -67,10 +57,13 @@ class App extends React.Component {
                     <Navbar />
                     <Switch>
                         <Route exact path='/' render={(props) => <Home
-                            coffeeList={this.state.masterCoffeeList} />}
-                        />
+                            coffeeList={this.state.masterCoffeeList}
+                            teaList={this.state.masterTeaList} 
+                            />}
+                    />
                         <Route path='/employee' render={(props) => <Employee
                             coffeeList={this.state.masterCoffeeList}
+                            teaList={this.state.masterTeaList}
                             employee={true}
                             itemSubtract={this.subtractStockAmount}
                         />}

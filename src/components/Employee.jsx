@@ -10,6 +10,7 @@ function Employee(props) {
                 <Inventory
                 employee={props.employee}
                 coffeeList={props.coffeeList}
+                teaList={props.teaList}
                 itemSubtract={props.itemSubtract}
                 />
         </div>
