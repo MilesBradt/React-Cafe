@@ -17,7 +17,19 @@ function Inventory(props) {
                     <span class="coffeeMenuText">Coffee</span>
                     {props.coffeeList.map((item, index) =>
                         <li class="itemsList" key={index}>
-                            {item.type} - ${item.price} [{item.amount} cups]
+                            {item.type} - {item.priceSmall} / {item.priceLarge} [{item.amount} cups]
+                            &nbsp; <button class="sellButton" onClick={() =>
+                                props.itemSubtract(item.id)
+                            }
+                            >Sell</button>
+                        </li>
+                    )}
+                </div>
+                <div class="teaComponent">
+                    <span class="teaMenuText">Tea</span>
+                    {props.teaList.map((item, index) =>
+                        <li class="itemsList" key={index}>
+                            {item.type} - {item.priceSmall} / {item.priceLarge} [{item.amount} cups]
                             &nbsp; <button class="sellButton" onClick={() =>
                                 props.itemSubtract(item.id)
                             }
