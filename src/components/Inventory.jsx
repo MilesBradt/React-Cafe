@@ -17,7 +17,7 @@ function Inventory(props) {
                     <span class="coffeeMenuText">Coffee</span>
                     {props.coffeeList.map((item, index) =>
                         <li class="itemsList" key={index}>
-                            {item.brand}: {item.name} - ${item.price} [{item.amount} cups]
+                            {item.type} - ${item.price} [{item.amount} cups]
                             &nbsp; <button class="sellButton" onClick={() =>
                                 props.itemSubtract(item.id)
                             }
@@ -33,21 +33,23 @@ function Inventory(props) {
                 <Row>
                     <Col>
                     <span class="coffeeMenuText">Coffee</span>
+                    <span class="itemSizeText">Small - Large</span>
                     {console.log(props.coffeeList)}
                     {console.log("Employee is false")}
                     {props.coffeeList.map((item, index) =>
                         <p class="itemsList" key={index}>
-                            {item.brand}: {item.name} .......... <span id="itemPrice">${item.price}</span>
+                            {item.type} .......... <span id="itemPrice">${item.priceSmall} / {item.priceLarge}</span>
                         </p>
                     )}
                     </Col>
                     <Col>
                         <span class="teaMenuText">Tea</span>
+                        <span class="itemSizeText">Small - Large</span>
                         {console.log(props.teaList)}
                         {console.log("Employee is false")}
                         {props.teaList.map((item, index) =>
                             <p class="itemsList" key={index}>
-                                {item.brand}: {item.name} .......... <span id="itemPrice">${item.price}</span>
+                                {item.type} .......... <span id="itemPrice">${item.priceSmall} / {item.priceLarge}</span>
                             </p>
                         )}
                     </Col>

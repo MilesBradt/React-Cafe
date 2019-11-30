@@ -30,10 +30,10 @@ class App extends React.Component {
             this.state.masterStockList.push(item)
         )
         this.state.masterStockList.map((item, index) => {
-            if (item.type === "coffee") {
+            if (item.category === "coffee") {
                 item.id = index
                 this.state.masterCoffeeList.push(item)
-            } else if (item.type === "tea") {
+            } else if (item.category === "tea") {
                 item.id = index
                 this.state.masterTeaList.push(item)
             }

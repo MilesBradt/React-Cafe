@@ -43,6 +43,14 @@
     color: black;
 }
 
+.itemSizeText {
+    font-family: 'Gupter', serif;
+    margin-top: 2em;
+    margin-right: 0.65em;
+    float: right;
+    font-size: smaller;
+}
+
 .itemsList {
     
 }

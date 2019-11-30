@@ -1,34 +1,34 @@
 var stock = [
     {
-        name: "drink 1",
-        brand: "brand 1",
-        price: 5,
+        type: "Regular",
+        priceSmall: 2.50,
+        priceLarge: 3.50,
         amount: 100,
-        type: "coffee",
+        category: "coffee",
         id: null
     },
     {
-        name: "drink 4",
-        brand: "brand 1",
-        price: 2,
+        type: "Earl Grey",
+        priceSmall: 2.75,
+        priceLarge: 3.25,
         amount: 100,
-        type: "tea",
+        category: "tea",
         id: null
     },
     {
-        name: "drink 3",
-        brand: "brand 2",
-        price: 4,
+        type: "Decaf",
+        priceSmall: 2.75,
+        priceLarge: 3.75,
         amount: 100,
-        type: "coffee",
+        category: "coffee",
         id: null
     },
     {
-        name: "drink 4",
-        brand: "brand 2",
-        price: 1,
+        type: "Green Tea",
+        priceSmall: 2.75,
+        priceLarge: 3.25,
         amount: 100,
-        type: "tea",
+        category: "tea",
         id: null
     },
 ]
