@@ -18,9 +18,7 @@ Go to http://localhost:8080/ in your browser
 
 ## WIP Notes
 
-* CSS needs to be finished, only header is done
-* Rebrand to a cafe isn't completed 
-* Inventory needs more items and real names
+* Inventory needs more items
 * Naming through the program could benefit from a refactor
 * Need to include edit button with proper functionality
 
