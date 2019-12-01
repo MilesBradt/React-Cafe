@@ -44,9 +44,8 @@ class App extends React.Component {
     subtractStockAmount(index) {
         var newStockList = this.state.masterStockList;
         newStockList[index].amount--
-        this.setState({masterStockList: newStockList})
+        this.setState({ masterStockList: newStockList })
     }
-
 
     render() {
         return (
@@ -58,9 +57,9 @@ class App extends React.Component {
                     <Switch>
                         <Route exact path='/' render={(props) => <Home
                             coffeeList={this.state.masterCoffeeList}
-                            teaList={this.state.masterTeaList} 
-                            />}
-                    />
+                            teaList={this.state.masterTeaList}
+                        />}
+                        />
                         <Route path='/employee' render={(props) => <Employee
                             coffeeList={this.state.masterCoffeeList}
                             teaList={this.state.masterTeaList}

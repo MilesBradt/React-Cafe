@@ -20,7 +20,8 @@ function Home(props) {
 }
 
 Home.propTypes = {
-    stockList: propTypes.array
+    coffeeList: propTypes.array,
+    teaList: propTypes.array
 }
 
 

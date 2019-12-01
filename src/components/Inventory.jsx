@@ -73,6 +73,7 @@ function Inventory(props) {
 
 Inventory.propTypes = {
     coffeeList: propTypes.array,
+    teaList: propTypes.array,
     employee: propTypes.bool,
     itemSubtract: propTypes.func
 }

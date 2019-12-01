@@ -19,7 +19,8 @@ function Employee(props) {
 }
 
 Employee.propTypes = {
-    stockList: propTypes.array,
+    coffeeList: propTypes.array,
+    teaList: propTypes.array,
     employee: propTypes.bool,
     itemSubtract: propTypes.func
 }
