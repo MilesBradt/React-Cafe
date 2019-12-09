@@ -10,9 +10,10 @@ function Home(props) {
         <div id="homeComponent">
             <h1>Menu</h1>
             <Inventory
-            employee={false}
             coffeeList={props.coffeeList}
             teaList={props.teaList}
+            employee={props.employee}
+            itemSubtract={props.itemSubtract}
             />
 
         </div>
@@ -21,7 +22,9 @@ function Home(props) {
 
 Home.propTypes = {
     coffeeList: propTypes.array,
-    teaList: propTypes.array
+    teaList: propTypes.array,
+    employee: propTypes.bool,
+    itemSubtract: propTypes.func
 }
 
 

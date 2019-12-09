@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Employee from "./Employee";
 import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.css';
 import Row from 'react-bootstrap/Row';
@@ -11,33 +12,11 @@ function Inventory(props) {
 
     if (props.employee) {
         return (
-            <div class="inventoryComponent">
-                {console.log("Employee is true")}
-                <div class="coffeeComponent">
-                    <span class="coffeeMenuText">Coffee</span>
-                    {props.coffeeList.map((item, index) =>
-                        <li class="itemsList" key={index}>
-                            {item.type} - {item.priceSmall} / {item.priceLarge} [Amount Left: {item.amount}]
-                            &nbsp; <button class="sellButton" onClick={() =>
-                                props.itemSubtract(item.id)
-                            }
-                            >Sell</button>
-                        </li>
-                    )}
-                </div>
-                <div class="teaComponent">
-                    <span class="teaMenuText">Tea</span>
-                    {props.teaList.map((item, index) =>
-                        <li class="itemsList" key={index}>
-                            {item.type} - {item.priceSmall} / {item.priceLarge} [Amount Left: {item.amount}]
-                            &nbsp; <button class="sellButton" onClick={() =>
-                                props.itemSubtract(item.id)
-                            }
-                            >Sell</button>
-                        </li>
-                    )}
-                </div>
-            </div>
+            <Employee 
+                coffeeList={props.coffeeList}
+                teaList={props.teaList}
+                itemSubtract={props.itemSubtract}
+            />
         )
     } else {
         return (

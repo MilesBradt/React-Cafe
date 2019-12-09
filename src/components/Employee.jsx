@@ -8,12 +8,33 @@ function Employee(props) {
     return (
         <div id="employeeComponent">
             <h1>Employee Menu</h1>
-            <Inventory
-                employee={props.employee}
-                coffeeList={props.coffeeList}
-                teaList={props.teaList}
-                itemSubtract={props.itemSubtract}
-            />
+            <div class="inventoryComponent">
+                {console.log("Employee is true")}
+                <div class="coffeeComponent">
+                    <span class="coffeeMenuText">Coffee</span>
+                    {props.coffeeList.map((item, index) =>
+                        <li class="itemsList" key={index}>
+                            {item.type} - {item.priceSmall} / {item.priceLarge} [Amount Left: {item.amount}]
+                            &nbsp; <button class="sellButton" onClick={() =>
+                                props.itemSubtract(item.id)
+                            }
+                            >Sell</button>
+                        </li>
+                    )}
+                </div>
+                <div class="teaComponent">
+                    <span class="teaMenuText">Tea</span>
+                    {props.teaList.map((item, index) =>
+                        <li class="itemsList" key={index}>
+                            {item.type} - {item.priceSmall} / {item.priceLarge} [Amount Left: {item.amount}]
+                            &nbsp; <button class="sellButton" onClick={() =>
+                                props.itemSubtract(item.id)
+                            }
+                            >Sell</button>
+                        </li>
+                    )}
+                </div>
+            </div>
         </div>
     );
 }

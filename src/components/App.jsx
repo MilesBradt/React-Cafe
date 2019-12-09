@@ -60,7 +60,7 @@ class App extends React.Component {
                             teaList={this.state.masterTeaList}
                         />}
                         />
-                        <Route path='/employee' render={(props) => <Employee
+                        <Route path='/employee' render={(props) => <Home
                             coffeeList={this.state.masterCoffeeList}
                             teaList={this.state.masterTeaList}
                             employee={true}
